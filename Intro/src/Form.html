@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>задача IntroHtml</title>
+</head>
+<body>
+<form action="111.php" method="post">
+    <label for="clientName">Ваше имя</label>
+    <input type="text" id="clientName" name="clientName">
+    <br/>
+
+    <label for="text">Введите сообщение:</label>
+    <br/>
+    <textarea rows="7" id="text" cols="50" name="text">текст</textarea>
+    <br/>
+
+    <p><b>Ваш пол</b>
+        <input type="radio" checked="checked" value="1" id="male" name="Gender"> <label for="male">M</label>
+        <input type="radio" id="female" value="2" name="Gender"> <label for="female">Ж</label>
+    </p>
+
+    <p><b>Выбери животное:</b><br/>
+        <input type="checkbox" name="собака">собака<br/>
+        <input type="checkbox" name="кошка">кошка<br/>
+        <input type="checkbox" name="корова">корова<br/>
+    </p>
+
+    <p><b>Выпадающий список с множественным выбором</b><br/>
+        <select size="5" multiple name="cities1">
+            <option disabled>Выберите город</option>
+            <option value="Новосибирск">Новосибирск</option>
+            <option selected value="Москва">Москва</option>
+            <option value="Урюпинск">Урюпинск</option>
+            <option value="Хабароск">Хабаровск</option>
+        </select>
+    </p>
+
+    <p><b>Выпадающий список с одиночным выбором</b><br/>
+        <select size="1" name="cities2">
+            <option disabled>Выберите город</option>
+            <option value="Новосибирск">Новосибирск</option>
+            <option selected value="Москва">Москва</option>
+            <option value="Урюпинск">Урюпинск</option>
+            <option value="Хабароск">Хабаровск</option>
+        </select></p>
+    <br/>
+
+
+    <button type="submit">Отправить</button>
+</form>
+</body>
+</html>
