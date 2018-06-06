@@ -97,6 +97,7 @@ input.sliderText {
    text-align: center;
    border-spacing: 0;
    border: none
+   background-color: rgb(232,233,233);
 }
 
 .footerTableHead {
@@ -115,15 +116,21 @@ input.sliderText {
 
 .footerTableLine {
   text-align: left;
+  font-size: 12px;
   padding: 5px 0px 5px 0px;
 
   border-style: dotted;
   border-width: 0px 1px 1px 0;
   border-color: rgb(70,70,70);
+
+}
+
+.uncheckedLine {
+ background-color: rgb(232,233,233);
 }
 
 .checkedLine {
-  background: rgb(180,211,248);
+  background-color: rgb(180,211,248);
 }
 
 /*  СЛАйДЕР Горизонтальный*/
@@ -143,7 +150,15 @@ input.sliderText {
   padding: 0px;
   transform-origin: 75px 75px;
   transform: rotate(-90deg);
-  float: center;
+  float: bottom;
+}
+.slider-footer {
+  width: 20px;
+  height: 120px;
+  padding: 0px;
+  transform-origin: 60px 60px;
+  transform: rotate(-90deg);
+  float: bottom;
 }
 
 /* КНОПКИ */
