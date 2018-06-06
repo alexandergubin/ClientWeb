@@ -1,0 +1,191 @@
+.header {
+    font-family: Arial;
+    font-size: 22px;
+    color:  rgb(123,104,13);
+    margin-bottom: 0px;
+    padding: 20px 0px 20px 0px;
+    background-color: rgb(254, 213, 23);
+}
+.headerWithRightBorder{
+    border-left:1px solid rgb(198,166,19);
+}
+
+.bigTable {
+    font-family: Arial;
+    font-size: 12px;
+    color:  rgb(95,95,95);
+    float: center;
+    width: 100%;
+    background-color: rgb(232,233,233);
+    border-spacing: 0;
+
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+}
+
+ A:link
+    {
+        text-decoration: none; /* Убирает подчеркивание для ссылок */
+        color: rgb(123,104,13);
+    }
+ A:visited
+    {
+        text-decoration: underline;
+        text-decoration: line-through;
+        color: red;
+    }
+ A:active
+    {
+        text-decoration: none; /* Убирает подчеркивание для ссылок */
+        color: rgb(123,104,13);
+    }
+ A:hover
+    {
+        text-decoration: underline; /* Делает ссылку подчеркнутой при наведении на нее курсора */
+        color: rgb(123,104,13); /* Цвет ссылки */
+    }
+
+a.disabled {
+    pointer-events: none;
+    cursor: default;
+    color: rgb(217,182,20);
+    background-color: rgb(254, 213, 23);
+    border: none;
+}
+
+
+
+th {
+  border-bottom: 2px solid rgb(196, 197, 197);
+  border-collapse: collapse;
+  padding: 10px;
+  text-align: center;
+}
+
+td {
+   text-align: center;
+   vertical-align: center;
+}
+
+
+input.sliderText {
+    width:  25px;
+    height: 15px;
+    border:1px solid #999;
+    font-size:12px;
+}
+
+.buttonsArea {
+    float: center;
+    width: 100%;
+    min-height: 100px;
+    background-color: rgb(232,233,233);
+}
+
+.footer {
+    float: center;
+    width: 100%;
+    background-color: rgb(232,233,233);
+}
+
+/*НИЖНЯЯ ТАБЛИЧКА*/
+
+.footerTable {
+   font-family: Arial;
+   font-size: 10px;
+   text-align: center;
+   border-spacing: 0;
+   border: none
+}
+
+.footerTableHead {
+  font-size: 12px;
+  background: rgb(254, 213, 23);
+  color: rgb(95,95,95);
+  border-collapse: collapse;
+  padding: 10px;
+  text-align: center;
+
+  border-style: dotted;
+  border-width: 0px 1px 1px 0px;
+  border-color: rgb(70,70,70);
+}
+
+
+.footerTableLine {
+  text-align: left;
+  padding: 5px 0px 5px 0px;
+
+  border-style: dotted;
+  border-width: 0px 1px 1px 0;
+  border-color: rgb(70,70,70);
+}
+
+.checkedLine {
+  background: rgb(180,211,248);
+}
+
+/*  СЛАйДЕР Горизонтальный*/
+.slider {
+  width: 230px;
+  height: 11px;
+  position: relative;
+  margin: 0;
+  padding: 0 10px;
+}
+
+/* БОКОВОЙ СЛАЙДЕР Вертиркальный */
+
+.slider-wrapper {
+  width: 20px;
+  height: 150px;
+  padding: 0px;
+  transform-origin: 75px 75px;
+  transform: rotate(-90deg);
+  float: center;
+}
+
+/* КНОПКИ */
+
+.leftButton {
+    float: left;
+    background-color: rgb(137,181,54);
+    border: 1px solid rgb(98,132,40);
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.rightButton {
+    float: right;
+    background-color: rgb(137,181,54);
+    border: true;
+    border: 1px solid rgb(98,132,40);
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.disabled {
+    background-color: rgb(222,222,222);
+    border: 1px solid rgb(175,175,175);
+    color:  rgb(70,70,70);
+    opacity: 0.6;
+    cursor: not-allowed;
+    background-color: default;
+}
+
+.withoutBottomBorder{
+ border-width: 0px 1px 0px 0px;
+}
