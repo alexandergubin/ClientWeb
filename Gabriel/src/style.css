@@ -152,6 +152,11 @@ input.sliderText {
    border-spacing: 0;
    border: none
    background-color: rgb(232,233,233);
+
+}
+
+.footerTable: last-child{
+    border-width: 1px 0px 0px 1px;
 }
 
 .footerTableHead {
