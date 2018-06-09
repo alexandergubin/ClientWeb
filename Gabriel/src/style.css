@@ -6,23 +6,47 @@
     padding: 20px 0px 20px 0px;
     background-color: rgb(254, 213, 23);
 }
+
 .headerWithRightBorder{
     border-left:1px solid rgb(198,166,19);
 }
 
 .bigTable {
-    font-family: Arial;
+    width: 100%;
+    font-family:  Tahoma;
     font-size: 12px;
     color:  rgb(95,95,95);
     float: center;
-    width: 100%;
+
     background-color: rgb(232,233,233);
     border-spacing: 0;
-
     border-collapse: collapse;
     padding: 10px;
     text-align: center;
 }
+
+.scrollBigTable{
+    overflow: scroll;
+    height: 300px;
+    width: 100%;
+}
+
+.scrollFooterTable{
+    overflow: scroll;
+    height: 200px;
+    width: 100%;
+}
+
+.bigTableLine{
+    font: bold ;
+    padding: 10px 0px 10px 0px;
+    color: rgb(109,109,109);
+}
+
+.Validator{
+    font-size: 14px;
+}
+
 
  A:link
     {
@@ -54,7 +78,9 @@ a.disabled {
     border: none;
 }
 
-
+.comment{
+   width: 100%;
+}
 
 th {
   border-bottom: 2px solid rgb(196, 197, 197);
@@ -68,6 +94,11 @@ td {
    vertical-align: center;
 }
 
+.remainderET{
+font-family: Arial Black;
+                      font-size: 16px;
+                      font-style: bold;
+}
 
 input.sliderText {
     width:  25px;
@@ -89,12 +120,35 @@ input.sliderText {
     background-color: rgb(232,233,233);
 }
 
+.footerHeader {
+  padding: 100px 0 20px 30px;
+  font-family: Tahoma;
+  font-size: 20px;
+  font-style: bold;
+  color: rgb(109,109,109);
+  float: left;
+}
+
+.refreshInfo {
+  padding: 100px 20px 20px 0px;
+  font-family: Tahoma;
+  font-size: 14px;
+  font-style: bold;
+  color: rgb(109,109,109);
+  float: right;
+}
+
+#arrows{
+    padding: 80px 50px 0 0;
+}
+
 /*НИЖНЯЯ ТАБЛИЧКА*/
 
 .footerTable {
+   width: 100%;
+   text-align: left;
    font-family: Arial;
    font-size: 10px;
-   text-align: center;
    border-spacing: 0;
    border: none
    background-color: rgb(232,233,233);
@@ -117,12 +171,23 @@ input.sliderText {
 .footerTableLine {
   text-align: left;
   font-size: 12px;
-  padding: 5px 0px 5px 0px;
+  color: rgb(89,89,89);
+  padding: 5px 0px 5px 10px;
 
   border-style: dotted;
   border-width: 0px 1px 1px 0;
-  border-color: rgb(70,70,70);
+  border-color: rgb(95,95,95);
+}
 
+#Ordered {
+    text-align: left;
+    width: 300px;
+}
+
+.deleteIcon{
+    width: 100px;
+    float: right;
+    padding: 0px 25px 0px 0;
 }
 
 .uncheckedLine {
@@ -164,6 +229,8 @@ input.sliderText {
 /* КНОПКИ */
 
 .leftButton {
+    width: 250px;
+     height: 50px;
     float: left;
     background-color: rgb(137,181,54);
     border: 1px solid rgb(98,132,40);
@@ -173,11 +240,13 @@ input.sliderText {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 50px 0px 0px 30px;
     cursor: pointer;
 }
 
 .rightButton {
+ width: 250px;
+     height: 50px;
     float: right;
     background-color: rgb(137,181,54);
     border: true;
@@ -188,7 +257,7 @@ input.sliderText {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 50px 20px 0px 0px;
     cursor: pointer;
 }
 
@@ -197,6 +266,7 @@ input.sliderText {
     border: 1px solid rgb(175,175,175);
     color:  rgb(70,70,70);
     opacity: 0.6;
+    margin: 50px 30px 0px 0px;
     cursor: not-allowed;
     background-color: default;
 }
