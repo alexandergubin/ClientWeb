@@ -1,5 +1,7 @@
 .header {
-    font-family: Arial;
+    float: center;
+    width: 100%;
+    font-family: Tahoma;
     font-size: 22px;
     color:  rgb(123,104,13);
     margin-bottom: 0px;
@@ -9,6 +11,10 @@
 
 .headerWithRightBorder{
     border-left:1px solid rgb(198,166,19);
+}
+
+#small_word{
+    font-size: 16px;
 }
 
 .bigTable {
@@ -146,6 +152,7 @@ input.sliderText {
 
 .footerTable {
    width: 100%;
+   float: center;
    text-align: left;
    font-family: Arial;
    font-size: 10px;
@@ -157,6 +164,7 @@ input.sliderText {
 
 .footerTable: last-child{
     border-width: 1px 0px 0px 1px;
+
 }
 
 .footerTableHead {
@@ -167,21 +175,35 @@ input.sliderText {
   padding: 10px;
   text-align: center;
 
-  border-style: dotted;
+  border-style: none dotted  none none;
   border-width: 0px 1px 1px 0px;
-  border-color: rgb(70,70,70);
+  border-color: rgb(120,120,120);
 }
-
 
 .footerTableLine {
   text-align: left;
   font-size: 12px;
   color: rgb(89,89,89);
   padding: 5px 0px 5px 10px;
+  border-style: dotted dotted dotted none;
+  border-width: 1px 1px 1px 0;
+}
 
-  border-style: dotted;
-  border-width: 0px 1px 1px 0;
-  border-color: rgb(95,95,95);
+.footerTableLine.firstRow{
+    border-width: 0px 1px 1px 0;
+}
+
+
+.footerTableLine.firstRowlastColumn{
+    border-width: 0px 0px 1px 0;
+}
+
+.footerTableLine.lastColumn{
+    border-width: 1px 0px 1px 0;
+}
+
+.footerTableHead.lastColumn{
+    border-width: 0px 0px 0px 0;
 }
 
 #Ordered {
@@ -197,10 +219,12 @@ input.sliderText {
 
 .uncheckedLine {
  background-color: rgb(232,233,233);
+ border-color: rgb(250,250,250) rgb(190,190,190) rgb(190,190,190) rgb(232,233,233);
 }
 
 .checkedLine {
   background-color: rgb(180,211,248);
+  border-color: rgb(250,250,250) rgb(190,190,190) rgb(190,190,190) rgb(180,211,248);
 }
 
 /*  СЛАйДЕР Горизонтальный*/
@@ -212,24 +236,7 @@ input.sliderText {
   padding: 0 10px;
 }
 
-/* БОКОВОЙ СЛАЙДЕР Вертиркальный */
 
-.slider-wrapper {
-  width: 20px;
-  height: 150px;
-  padding: 0px;
-  transform-origin: 75px 75px;
-  transform: rotate(-90deg);
-  float: bottom;
-}
-.slider-footer {
-  width: 20px;
-  height: 120px;
-  padding: 0px;
-  transform-origin: 60px 60px;
-  transform: rotate(-90deg);
-  float: bottom;
-}
 
 /* КНОПКИ */
 
@@ -249,9 +256,13 @@ input.sliderText {
     cursor: pointer;
 }
 
+.leftButton:hover {
+    background-color: rgb(88,120,35);
+}
+
 .rightButton {
- width: 250px;
-     height: 50px;
+    width: 250px;
+    height: 50px;
     float: right;
     background-color: rgb(137,181,54);
     border: true;
@@ -266,6 +277,10 @@ input.sliderText {
     cursor: pointer;
 }
 
+.rightButton:hover {
+    background-color: rgb(88,120,35);
+}
+
 .disabled {
     background-color: rgb(222,222,222);
     border: 1px solid rgb(175,175,175);
@@ -274,6 +289,10 @@ input.sliderText {
     margin: 50px 30px 0px 0px;
     cursor: not-allowed;
     background-color: default;
+}
+
+.disabled:hover {
+    background-color: rgb(139,139,139);
 }
 
 .withoutBottomBorder{

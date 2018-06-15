@@ -7,22 +7,25 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<div class="header">
-    <table align="center" width=100%>
+<div>
+    <table class="header">
+        <thead>
         <tr>
             <td><a href="http://vk6.com">Gabriel</a></td>
-            <td class="headerWithRightBorder"><a href="http://vk.com">Gabriel блоки</a></td>
+            <td class="headerWithRightBorder"><a href="http://vk.com">Gabriel <span id="small_word">блоки</span></a></td>
             <td class="headerWithRightBorder"><a href="http://google.com">Сирена</a></td>
             <td class="headerWithRightBorder"><a href="http://vk2.com">Amadeus</a></td>
             <td class="headerWithRightBorder"><a class="disabled" href="http://yandex.ru">Sabre</a></td>
             <td class="headerWithRightBorder"><a class="disabled" href="http://yandex.ru">Galileo</a></td>
             <td class="headerWithRightBorder"><a href="http://vk5.com">Бумажные</a></td>
         </tr>
+        </thead>
     </table>
 </div>
 
 <div class="scrollBigTable">
     <table class="bigTable">
+        <thead>
         <tr>
             <th>Валидатор</th>
             <th>Буква</th>
@@ -32,6 +35,8 @@
             <th>Комметарий</th>
             <th></th>
         </tr>
+        </thead>
+        <tbody>
         <tr>
             <td class="bigTableLine Validator">421-7176-1</td>
             <td class="bigTableLine">A</td>
@@ -46,7 +51,7 @@
                 </span>
             </td>
             <td class="bigTableLine">
-                <input type="text"  class="comment" value="какой-то комментарий"
+                <input type="text" class="comment" value="какой-то комментарий"
                        onfocus="if(this.value==this.defaultValue)this.value='';"
                        onblur="if(this.value=='')this.value=this.defaultValue;">
             </td>
@@ -65,7 +70,7 @@
                 </span>
             </td>
             <td class="bigTableLine">
-                <input type="text"  class="comment" value="какой-то комментарий"
+                <input type="text" class="comment" value="какой-то комментарий"
                        onfocus="if(this.value==this.defaultValue)this.value='';"
                        onblur="if(this.value=='')this.value=this.defaultValue;">
             </td>
@@ -84,7 +89,7 @@
                 </span>
             </td>
             <td class="bigTableLine">
-                <input type="text"  class="comment" value="какой-то комментарий"
+                <input type="text" class="comment" value="какой-то комментарий"
                        onfocus="if(this.value==this.defaultValue)this.value='';"
                        onblur="if(this.value=='')this.value=this.defaultValue;">
             </td>
@@ -103,7 +108,7 @@
                 </span>
             </td>
             <td class="bigTableLine">
-                <input type="text"  class="comment" value="какой-то комментарий"
+                <input type="text" class="comment" value="какой-то комментарий"
                        onfocus="if(this.value==this.defaultValue)this.value='';"
                        onblur="if(this.value=='')this.value=this.defaultValue;">
             </td>
@@ -122,7 +127,7 @@
                 </span>
             </td>
             <td class="bigTableLine">
-                <input type="text"  class="comment" value="какой-то комментарий"
+                <input type="text" class="comment" value="какой-то комментарий"
                        onfocus="if(this.value==this.defaultValue)this.value='';"
                        onblur="if(this.value=='')this.value=this.defaultValue;">
             </td>
@@ -141,7 +146,7 @@
                 </span>
             </td>
             <td class="bigTableLine">
-                <input type="text"  class="comment" value="какой-то комментарий"
+                <input type="text" class="comment" value="какой-то комментарий"
                        onfocus="if(this.value==this.defaultValue)this.value='';"
                        onblur="if(this.value=='')this.value=this.defaultValue;">
             </td>
@@ -160,7 +165,7 @@
                 </span>
             </td>
             <td class="bigTableLine">
-                <input type="text"  class="comment" value="какой-то комментарий"
+                <input type="text" class="comment" value="какой-то комментарий"
                        onfocus="if(this.value==this.defaultValue)this.value='';"
                        onblur="if(this.value=='')this.value=this.defaultValue;">
             </td>
@@ -179,31 +184,29 @@
                 </span>
             </td>
             <td class="bigTableLine">
-                <input type="text"  class="comment" value="какой-то комментарий"
+                <input type="text" class="comment" value="какой-то комментарий"
                        onfocus="if(this.value==this.defaultValue)this.value='';"
                        onblur="if(this.value=='')this.value=this.defaultValue;">
             </td>
         </tr>
-
-
+        </tbody>
     </table>
 </div>
-<div >
-
+<div>
     <table class="buttonsArea">
         <tr>
             <td>
-                <button class="leftButton">Архив заявок</button>
+                <button class="leftButton" title="открыть архив заявок">Архив заявок</button>
             </td>
             <td>
-                <button class="rightButton disabled">Отправить</button>
-                <button class="rightButton">Отменить</button>
+                <button class="rightButton disabled" title="отправить по почте">Отправить</button>
+                <button class="rightButton" title="отменить все заявки">Отменить</button>
             </td>
         </tr>
     </table>
 </div>
 
-<div >
+<div>
     <table class="footer">
         <tr>
             <td>
@@ -213,83 +216,84 @@
                 <span class="refreshInfo">Обновлено 13.11.2012, 15:45</span>
             </td>
             <td width="100">
-                <span  class="refreshInfo" id="arrows"><img src="refresh.png" alt="refresh"></span>
+                <span class="refreshInfo" id="arrows"><img src="refresh.png" alt="refresh"></span>
             </td>
         </tr>
     </table>
 </div>
-    <div class="scrollFooterTable">
-    <table class="footerTable" align="left" width=100%>
-        <tr class="footerTableHead">
+<div class="scrollFooterTable">
+    <table class="footerTable">
+        <thead>
+        <tr>
             <th class="footerTableHead">Дата, время заявки</th>
             <th class="footerTableHead">Номер заявки</th>
             <th class="footerTableHead">Статус</th>
             <th class="footerTableHead">Система бронирования</th>
-            <th class="footerTableHead" id="Ordered" colspan="2">Заказано</th>
-            <span></span>
+            <th class="footerTableHead lastColumn" id="Ordered" colspan="2">Заказано</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="footerTableLine checkedLine firstRow" >21.12.2015 8:56</td>
+            <td class="footerTableLine checkedLine firstRow">51465561</td>
+            <td class="footerTableLine checkedLine firstRow">Рассмотрена</td>
+            <td class="footerTableLine checkedLine firstRow">Gabriel</td>
+            <td class="footerTableLine checkedLine firstRowlastColumn">400<span class="deleteIcon"><img src="delete_icon.png" alt="delete"></span></td>
+        </tr>
+        <tr >
+            <td class="footerTableLine checkedLine">21.12.2015 8:56</td>
+            <td class="footerTableLine checkedLine">51465561</td>
+            <td class="footerTableLine checkedLine">Рассмотрена</td>
+            <td class="footerTableLine checkedLine">Gabriel</td>
+            <td class="footerTableLine checkedLine lastColumn">400<span class="deleteIcon"><img src="delete_icon.png" alt="delete"></span></td>
+        </tr>
+        <tr >
+            <td class="footerTableLine checkedLine">21.12.2015 8:56</td>
+            <td class="footerTableLine checkedLine">51465561</td>
+            <td class="footerTableLine checkedLine">Рассмотрена</td>
+            <td class="footerTableLine checkedLine">Gabriel</td>
+            <td class="footerTableLine checkedLine lastColumn">400<span class="deleteIcon"><img src="delete_icon.png" alt="delete"></span></td>
         </tr>
 
-        <tr class="checkedLine">
-            <td class="footerTableLine">21.12.2015 8:56</td>
-            <td class="footerTableLine">51465561</td>
-            <td class="footerTableLine">Рассмотрена</td>
-            <td class="footerTableLine">Gabriel</td>
-            <td class="footerTableLine">400<span class="deleteIcon"><img src="delete_icon.png" alt="delete"></span></td>
+        <tr>
+            <td class="footerTableLine uncheckedLine">21.12.2015 8:56</td>
+            <td class="footerTableLine uncheckedLine">5146556</td>
+            <td class="footerTableLine uncheckedLine">На рассмотрении</td>
+            <td class="footerTableLine uncheckedLine">Gabriel</td>
+            <td class="footerTableLine uncheckedLine lastColumn">400</td>
         </tr>
-        <tr class="checkedLine">
-            <td class="footerTableLine">21.12.2015 8:56</td>
-            <td class="footerTableLine">51465561</td>
-            <td class="footerTableLine">Рассмотрена</td>
-            <td class="footerTableLine">Gabriel</td>
-            <td class="footerTableLine">400<span class="deleteIcon"><img src="delete_icon.png" alt="delete"></span></td>
+        <tr>
+            <td class="footerTableLine uncheckedLine">21.12.2015 8:56</td>
+            <td class="footerTableLine uncheckedLine">5146556</td>
+            <td class="footerTableLine uncheckedLine">На рассмотрении</td>
+            <td class="footerTableLine uncheckedLine">Gabriel</td>
+            <td class="footerTableLine uncheckedLine lastColumn">400</td>
         </tr>
-        <tr class="checkedLine">
-            <td class="footerTableLine">21.12.2015 8:56</td>
-            <td class="footerTableLine">51465561</td>
-            <td class="footerTableLine">Рассмотрена</td>
-            <td class="footerTableLine">Gabriel</td>
-            <td class="footerTableLine">400<span class="deleteIcon"><img src="delete_icon.png" alt="delete"></span></td>
+        <tr>
+            <td class="footerTableLine uncheckedLine">21.12.2015 8:56</td>
+            <td class="footerTableLine uncheckedLine">5146556</td>
+            <td class="footerTableLine uncheckedLine">На рассмотрении</td>
+            <td class="footerTableLine uncheckedLine">Gabriel</td>
+            <td class="footerTableLine uncheckedLine lastColumn">400</td>
         </tr>
-
-        <tr class="uncheckedLine">
-            <td class="footerTableLine">21.12.2015 8:56</td>
-            <td class="footerTableLine">5146556</td>
-            <td class="footerTableLine">На рассмотрении</td>
-            <td class="footerTableLine">Gabriel</td>
-            <td class="footerTableLine">400</td>
+        <tr>
+            <td class="footerTableLine uncheckedLine">21.12.2015 8:56</td>
+            <td class="footerTableLine uncheckedLine">5146556</td>
+            <td class="footerTableLine uncheckedLine">На рассмотрении</td>
+            <td class="footerTableLine uncheckedLine">Gabriel</td>
+            <td class="footerTableLine uncheckedLine lastColumn">400</td>
         </tr>
-        <tr class="uncheckedLine">
-            <td class="footerTableLine">21.12.2015 8:56</td>
-            <td class="footerTableLine">51465561</td>
-            <td class="footerTableLine">На рассмотрении</td>
-            <td class="footerTableLine">Gabriel</td>
-            <td class="footerTableLine">400</td>
-        </tr>
-        <tr class="uncheckedLine">
-            <td class="footerTableLine">21.12.2015 8:56</td>
-            <td class="footerTableLine">51465561</td>
-            <td class="footerTableLine">На рассмотрении</td>
-            <td class="footerTableLine">Gabriel</td>
-            <td class="footerTableLine">400</td>
-        </tr>
-        <tr class="uncheckedLine">
-            <td class="footerTableLine">21.12.2015 8:56</td>
-            <td class="footerTableLine">51465561</td>
-            <td class="footerTableLine">На рассмотрении</td>
-            <td class="footerTableLine">Gabriel</td>
-            <td class="footerTableLine">400</td>
-        </tr>
-        <tr class="uncheckedLine">
-            <td class="footerTableLine">21.12.2015 8:56</td>
-            <td class="footerTableLine">51465561</td>
-            <td class="footerTableLine">На рассмотрении</td>
-            <td class="footerTableLine">Gabriel</td>
-            <td class="footerTableLine">400</td>
+        <tr>
+            <td class="footerTableLine uncheckedLine">21.12.2015 8:56</td>
+            <td class="footerTableLine uncheckedLine">51465561</td>
+            <td class="footerTableLine uncheckedLine">На рассмотрении</td>
+            <td class="footerTableLine uncheckedLine">Gabriel</td>
+            <td class="footerTableLine uncheckedLine lastColumn">400</td>
         </tr>
 
+        </tbody>
     </table>
 </div>
-
 
 </body>
 </html>
